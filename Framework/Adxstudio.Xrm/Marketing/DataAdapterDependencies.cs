@@ -26,9 +26,7 @@ namespace Adxstudio.Xrm.Marketing
 		{
 			PortalName = portalName;
 		}
-
-		protected string PortalName { get; private set; }
-
+		
 		public override OrganizationServiceContext GetServiceContextForWrite()
 		{
 			return PortalCrmConfigurationManager.CreateServiceContext(PortalName);
